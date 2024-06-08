@@ -1,0 +1,9 @@
+<div>
+    <h4>Elija una fecha:</h4>
+    <input [(ngModel)]="this.date" type="date" max="{{currentDate | date:'yyyy-MM-dd'}}" >
+    <button type="button" class="btn btn-primary" (click)="this.enviar()">Aceptar</button>
+    <p></p>
+    <h5>{{this.titulo}}</h5>
+    <p>{{this.explanation}}</p>
+    <img src="{{this.image}}" alt="">
+</div>

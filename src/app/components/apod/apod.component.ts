@@ -1,18 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ApodComponent } from './components/apod/apod.component';
+import { DatePipe } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NodeapodService } from './services/nodeapod.service';
+import { NodeapodService } from '../../services/nodeapod.service';
+
 @Component({
-  selector: 'app-root',
+  selector: 'app-apod',
   standalone: true,
-  imports: [RouterOutlet, ApodComponent, HttpClientModule, FormsModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [DatePipe, FormsModule, HttpClientModule],
+  templateUrl: './apod.component.html',
+  styleUrl: './apod.component.css'
 })
-export class AppComponent {
- title = 'angular_examen_final';
+export class ApodComponent {
+  currentDate = new Date();
+
+  selectedDate = new Date();
 
   date?: string;
   titulo?: string;
@@ -29,7 +31,9 @@ export class AppComponent {
     this.titulo = res['titulo'];
     this.explanation = res['explanation'];
     this.image = res['image'];
-    
+    if (this.titulo && this.explanation && this.image) {
+      console.log(this.titulo + this. explanation + this.image);
+    }
   });
  }
 }
