@@ -4,10 +4,11 @@ import { ApodComponent } from './components/apod/apod.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NodeapodService } from './services/nodeapod.service';
+import { SimpsonComponent } from './components/simpson/simpson.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ApodComponent, HttpClientModule, FormsModule],
+  imports: [RouterOutlet, ApodComponent, SimpsonComponent, HttpClientModule, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
