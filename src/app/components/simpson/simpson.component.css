@@ -1,0 +1,95 @@
+.conte{
+    position: relative;
+
+    width: 88%;
+    height: 77%;
+    top: 12%;
+    border-radius: 2px;
+    left: 6%;
+    border: 1px solid #444;
+    background-color: #aaa;
+    overflow: hidden;
+    background: url(../../../assets/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.simpsons-containeru {
+    margin: 20px;
+    padding: 20px;
+    background: #FFF8DC; /* Color de fondo claro */
+    border: 5px solid #FFD700; /* Borde amarillo */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .simpsons-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5em;
+    color: #FF6347; /* Color rojo tomate */
+    text-shadow: 2px 2px 0px #000000; /* Sombra negra */
+    margin-bottom: 10px;
+  }
+  
+  .simpsons-text {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2em;
+    color: #333333; /* Color negro suave */
+    line-height: 1.5;
+    margin: 0;
+  }
+  .simpsons-containerd {
+    margin: 20px;
+    padding: 20px;
+    background: #FFF8DC; /* Color de fondo claro */
+    border: 5px solid #FFD700; /* Borde amarillo */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .simpsons-titled {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5em;
+    color: #FF6347; /* Color rojo tomate */
+    text-shadow: 2px 2px 0px #000000; /* Sombra negra */
+    margin-bottom: 20px;
+  }
+  
+  .simpsons-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Patrick Hand', cursive;
+    border: 3px solid #FFD700; /* Borde amarillo */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .simpsons-input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .simpsons-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-family: 'Fredoka One', cursive;
+    color: #ffffff;
+    background: #FF6347; /* Color rojo tomate */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 1px 1px 0px #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+  }
+  
+  .simpsons-button:hover {
+    background: #FFD700; /* Color amarillo */
+    transform: scale(1.05);
+  }
