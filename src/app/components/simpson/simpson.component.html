@@ -1,22 +1,30 @@
 <div>
-    <label>Elija un Personaje</label>
-    <select name="" [(ngModel)]="this.nombre">
-        <option value="Krusty el Payaso">Krusty el Payaso</option>
-        <option value="Cletus">Cletus</option>
-        <option value="Kirk Van Houten">Kirk Van Houten</option>
-        <option value="Richard">Richard</option>
-        <option value="Sarah Wiggum">Sarah Wiggum</option>
+    <div class="simpsons-containeru">
+    <label class="simpsons-titled">Elija un Personaje</label>
+    <select name="" [(ngModel)]="this.nombre" class="simpsons-input">
+        <option class="simpsons-title" value="Krusty el Payaso">Krusty el Payaso</option>
+        <option class="simpsons-title" value="Cletus">Cletus</option>
+        <option class="simpsons-title" value="Kirk Van Houten">Kirk Van Houten</option>
+        <option class="simpsons-title" value="Richard">Richard</option>
+        <option class="simpsons-title" value="Sarah Wiggum">Sarah Wiggum</option>
     </select>
-    <button type="button" class="btn btn-primary" (click)="this.enviarSimpson()">Aceptar</button>
-    <img src="{{this.imagen}}" alt="">
+    <button type="button" class="simpsons-button" (click)="this.enviarSimpson()">Aceptar</button>
+</div>
+<div class="conte">
+    <div class="contenedorsimp">
     <br>
-    <h5>{{this.nombre}}</h5>
+    <div class="simpsons-containerd">
+    <h5 class="simpsons-title">{{this.nombre}}</h5>
     <br>
-    <p>{{this.historia}}</p>
+    <p class="simpsons-text">{{this.historia}}</p>
     <br>
-    <p>{{this.genero}}</p>
+    <p class="simpsons-text">{{this.genero}}</p>
     <br>
-    <p>{{this.estado}}</p>
+    <p class="simpsons-text">{{this.estado}}</p>
     <br>
-    <p>{{this.ocupacion}}</p>
+    <p class="simpsons-text">{{this.ocupacion}}</p>
+</div>
+<img src="{{this.imagen}}" alt="">
+</div>
+</div>
 </div>
